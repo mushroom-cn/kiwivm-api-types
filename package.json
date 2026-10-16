@@ -1,0 +1,25 @@
+{
+  "name": "kiwivm-api-types",
+  "version": "1.0.0",
+  "description": "TypeScript type declarations for BandwagonHost (搬瓦工) KiwiVM REST API",
+  "types": "src/kiwivm-api.d.ts",
+  "files": [
+    "src/kiwivm-api.d.ts"
+  ],
+  "keywords": [
+    "bandwagonhost",
+    "kiwivm",
+    "搬瓦工",
+    "vps",
+    "api",
+    "typescript",
+    "types",
+    "declarations"
+  ],
+  "author": "mushroom-cn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mushroom-cn/kiwivm-api-types.git"
+  }
+}
