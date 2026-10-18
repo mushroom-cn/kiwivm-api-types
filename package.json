@@ -2,14 +2,24 @@
   "name": "kiwivm-api-types",
   "version": "1.0.0",
   "description": "TypeScript types and axios-based client for BandwagonHost (搬瓦工) KiwiVM REST API",
-  "main": "dist/index.js",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "build": "vite build && tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [
     "bandwagonhost",
@@ -32,6 +42,8 @@
     "axios": "^1.7.0"
   },
   "devDependencies": {
-    "typescript": "^5.4.5"
-  }
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  },
+  "packageManager": "pnpm@11.2.2"
 }
