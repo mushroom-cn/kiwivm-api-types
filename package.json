@@ -1,11 +1,16 @@
 {
   "name": "kiwivm-api-types",
   "version": "1.0.0",
-  "description": "TypeScript type declarations for BandwagonHost (搬瓦工) KiwiVM REST API",
-  "types": "src/kiwivm-api.d.ts",
+  "description": "TypeScript types and axios-based client for BandwagonHost (搬瓦工) KiwiVM REST API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "src/kiwivm-api.d.ts"
+    "dist"
   ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "bandwagonhost",
     "kiwivm",
@@ -14,12 +19,19 @@
     "api",
     "typescript",
     "types",
-    "declarations"
+    "axios",
+    "client"
   ],
   "author": "mushroom-cn",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/mushroom-cn/kiwivm-api-types.git"
+  },
+  "dependencies": {
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
   }
 }
