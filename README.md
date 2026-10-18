@@ -1,6 +1,6 @@
 # kiwivm-api-types
 
-TypeScript types and axios-based client for [BandwagonHost (搬瓦工) KiwiVM REST API](https://bandwagonhost.com/kiwivm-wiki-REST-API).
+TypeScript types and axios-based client for [KiwiVM REST API](https://bandwagonhost.com/kiwivm-wiki-REST-API).
 
 ## Features
 
